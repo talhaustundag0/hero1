@@ -23,12 +23,12 @@
   <header>
     <div class="header">
       <div class="row">
-        <div class="col d-sm-flex">
-          <button class="btn-header d-flex align-items-center justify-content-center">
+        <div class="col">
+          <button class="btn-menu d-sm-flex d-lg-none p-2">
             <i class="fas fa-bars"></i>
           </button>
         </div>
-        <div class="col d-lg-flex">
+        <div class="col d-none d-lg-flex">
           <div class="header-left d-flex align-items-center justify-content-center">
             <a href="#">Start</a>
             <a href="#">Details</a>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="col d-flex justify-content-between">
-          <div class="header-middle d-flex align-items-center justify-content-between m-2">
+          <div class="header-middle d-none d-lg-flex align-items-center justify-content-between m-2">
             <div class="phone">
               <h6>TEL: (0212)</h6>
               <h5>706 8980</h5>
@@ -47,7 +47,7 @@
               <button>Kontakt</button>
             </div>
           </div>
-          <div class="header-right d-flex align-items-center justify-content-between m-2">  
+          <div class="header-right d-none d-lg-flex align-items-center justify-content-between m-2">  
             <img src="images/logo.png" alt="img">
           </div>
         </div>
@@ -58,13 +58,13 @@
 
   <main>
 
-    <section class="main">
+    <div class="main">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5">
             <div class="content">
-              <h2>Digital Product<br>for Your Ideas</h2>
-              <p>
+              <h1>Digital Product<br>for Your Ideas</h1>
+              <p class="">
                 Excepteur sint occaecar cupidatat non proident<br>sunt iculpa qui officia deserunt mollit anim est.
               </p>
               <a href="#">READ MORE</a>
@@ -84,20 +84,20 @@
             <a href="#" class="text-decoration-none py-3 px-3 fs-5 text-black current ">Analiz</a>
             <a href="#" class="text-decoration-none py-3 px-3 fs-5 text-black">Bilgi</a>
         </div>
-        <div class="hero-form-inner py-5 px-4 bg-white">
-          <div class="container">
-            <div class="row d-block d-lg-flex justify-content-center w-100 align-items-center">
-              <div class="col-4">
+        <div class="hero-form-inner d-lg-flex d-sm-block py-5 px-4 bg-white">
+          <div class="container d-lg flex d-sm-block">
+            <div class="row d-lg-flex d-sm-block justify-content-center align-items-center">
+              <div class="col-4 d-sm-block w-100">
                 <label for="category" >Kategori Seç</label>
-                <select name="category" id="category" class="form-select input-text dropdown1 m-1 w-100">
+                <select name="category" id="category" class="form-select input-text dropdown1 m-1">
                   <option value="-1">Kategori Seç</option>
                 </select>
               </div>
-              <div class="col-5">
+              <div class="col-5 w-100">
                 <label for="firma">Firma Adı</label>
                 <input type="text" class="form-control input-text m-1">
               </div>
-              <div class="col-3">
+              <div class="col-3 w-100">
                 <button class="btn btn-primary w-100 align-items-center justify-content-center">Jetz Analysys</button>
               </div>
             </div>
@@ -107,6 +107,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer-img d-flex justify-content-center align-items-center">
       <img src="images/google.png" alt="img">
