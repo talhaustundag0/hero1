@@ -7,9 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -24,7 +22,7 @@
     <div class="header">
       <div class="row">
         <div class="col">
-          <button class="btn-menu d-sm-flex d-lg-none p-2">
+          <button class="btn-menu d-sm-flex d-lg-none p-2" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu1">
             <i class="fas fa-bars"></i>
           </button>
         </div>
@@ -54,7 +52,35 @@
       </div>
     </div>
   </header>
-
+  <div class="offcanvas offcanvas-start" id="mobileMenu" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">MENU</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="navbar d-flex justify-content-center align-items-center">
+      <ul class="w-100 align-items-center justify-content-center">
+        <li><a href="#">Start</a></li>
+        <li><a href="#">Details</a></li>
+        <li><a href="#">Schritte</a></li>
+        <li><a href="#">Preise</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="mobileMenu-bottom row align-items-center justify-content-between">
+      <div class="col d-flex align-items-center justify-content-between m-2">
+        <div class="phone mt-2">
+          <h6>TEL: (0212)</h6>
+          <h5>706 8980</h5>
+        </div>
+        <div class="btn">
+          <button>Kontakt</button>
+        </div>      
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <img src="images/logo.png" alt="img">
+    </div>
+  </div>
 
   <main>
 
@@ -72,7 +98,7 @@
           </div>
           <div class="col-lg-7">
             <div class="photo">
-              <img src="images/background.png" alt="z">
+              <img src="images/background.png" alt="img">
             </div>
           </div>
         </div>
@@ -80,24 +106,25 @@
 
 
       <div class="hero-form-wrapper">
-        <div class="hero-form-wrapper-menu sub-menu d-flex bg-white col-3">
-            <a href="#" class="text-decoration-none py-3 px-3 fs-5 text-black current ">Analiz</a>
-            <a href="#" class="text-decoration-none py-3 px-3 fs-5 text-black">Bilgi</a>
+
+        <div class="hero-form-inner col-8 mx-auto py-5 px-4 bg-white">
+          <div class="hero-form-wrapper-menu sub-menu d-flex bg-white col-3">
+            <a href="#" class="text-decoration-none py-3 px-3 fs-5 text-black current "><i class="icon"><img src="images/icon.png" alt="icon"></i>Analiz</a>
+            <a href="#" class="text-decoration-none py-3 px-3 fs-5 text-black"><i class="icon"><img src="images/icon1.png" alt="icon"></i> Bilgi</a>
         </div>
-        <div class="hero-form-inner d-lg-flex d-sm-block py-5 px-4 bg-white">
-          <div class="container d-lg flex d-sm-block">
-            <div class="row d-lg-flex d-sm-block justify-content-center align-items-center">
-              <div class="col-4 d-sm-block w-100">
+          <div class="container d-lg-flex d-sm-block w-100 pt-4">
+            <div class="row justify-content-center align-items-center w-100">
+              <div class="col-12 col-lg-4 d-sm-block">
                 <label for="category" >Kategori Seç</label>
                 <select name="category" id="category" class="form-select input-text dropdown1 m-1">
                   <option value="-1">Kategori Seç</option>
                 </select>
               </div>
-              <div class="col-5 w-100">
+              <div class="col-12 col-lg-5">
                 <label for="firma">Firma Adı</label>
                 <input type="text" class="form-control input-text m-1">
               </div>
-              <div class="col-3 w-100">
+              <div class="col-12 col-lg-3 pt-3">
                 <button class="btn btn-primary w-100 align-items-center justify-content-center">Jetz Analysys</button>
               </div>
             </div>
@@ -107,7 +134,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <div class="footer-img d-flex justify-content-center align-items-center">
       <img src="images/google.png" alt="img">
@@ -131,5 +157,5 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
 </body>
-
 </html>
+
