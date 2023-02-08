@@ -11,15 +11,22 @@
     text-transform: capitalize;
 }
 
+::-webkit-scrollbar{width: 1.2rem;}
+::-webkit-scrollbar-track{background-color: #47225e;}
+::-webkit-scrollbar-thumb{background-color: white;}
+
+
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar{width: 1.2rem;}
-::-webkit-scrollbar-track{background-color: #47225e;}
-::-webkit-scrollbar-thumb{background-color: white;}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .header-top{
     height: 2rem;
@@ -86,13 +93,12 @@ html{
 .hero-form-inner{
     position: relative;
     margin-top: -60px;
-    margin-left: 20%;
-    margin-right: 20%;
-    /* box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75); */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.hero-form-inner .container .col-3 .btn{
+.hero-form-inner .container .btn{
     background-color: #ec8f6e;
     font-size:1.2rem;
     height: 4rem;
@@ -108,9 +114,10 @@ html{
 }
 
 .hero-form-wrapper-menu{
-    position: absolute;
+    position: relative;
+    /* position: absolute; */
     margin-top: -35px;
-    padding-left: 20%;
+    /* padding-left: 20%; */
 }
 
 .hero-form-wrapper-menu .current{
@@ -137,7 +144,60 @@ footer .footer-content p{
 }
 
 .btn-menu{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-size: 2rem;
 }
 
+.offcanvas-header{
+    background-color: #ec8f6e;
+}
+
+.offcanvas-header h5{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.navbar ul li a:hover{
+    color: #ec8f6e;
+}
+
+
+.navbar li{
+    list-style: none;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+
+.mobileMenu-bottom{
+    background-color: #ffffff;
+    width: 102%;
+}
+
+.mobileMenu-bottom .phone h6{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.mobileMenu-bottom .phone h5{
+    font-size: 1.8rem;
+    color: black;
+}
+
+.mobileMenu-bottom .btn button{
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #ec8f6e;
+}
+
+.icon {
+    background: url('/images/icon.png');
+}
