@@ -17,23 +17,19 @@ html{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar{width: 1.2rem;}
+::-webkit-scrollbar-track{background-color: #47225e;}
+::-webkit-scrollbar-thumb{background-color: white;}
+
 .header-top{
-    width: 100%;
     height: 2rem;
     background-color: #47225e;
 }
 
-.header .row .col {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header .row .col .header-left{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    
+.btn-header{
+    background-color: white;
+    font-size: 2rem;
+    padding-left: 2rem;
 }
 
 .header .row .col .header-left a{
@@ -44,27 +40,8 @@ html{
     text-decoration: none;
 }
 
-.header .row .col .header-middle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin:2rem;
-}
-
-.header .row .col  .header-right{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 2rem;
-}
-
 .header .row .col .header-middle .phone{
     margin: 0 2rem;
-}
-
-.header .row .col .header-middle .phone h6{
-    font-size: 1rem;
-    font-weight: 800;
 }
 
 .header .row .col .header-middle .phone h5{
@@ -155,6 +132,12 @@ footer .footer-content p{
     color: #47225e;
 }
 
-.input-text{border: 1px solid #ccc; padding: 7px 14px 9px; transition: 0.4s;}
-.input
+.input-text{
+    border: 1px solid #ccc; 
+    padding: 7px 14px 9px; 
+    transition: 0.4s;
+    font-size: 1.4rem;
+}
+
+
 
