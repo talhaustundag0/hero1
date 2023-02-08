@@ -83,12 +83,6 @@ html{
     justify-content: center;
 }
 
-.main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .main .content h2{
     font-size: 5.2rem;
     font-weight: 600;
@@ -113,36 +107,54 @@ html{
     font-weight: 800;
 }
 
-.container{
-    width: 50%;
-    height: 12rem;
+.hero-form-inner{
     position: relative;
-    margin-top: -10rem;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    margin-top: -60px;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
 }
 
-.container .row{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.hero-form-inner .container .col-3 .btn{
+    background-color: #ec8f6e;
+    font-size:1.2rem;
+    height: 4rem;
+    width:15rem;
+    margin-top: 1.2rem;
+    border: none;
+    border-radius: 0;
 }
 
-.container .row .col-6{
-   display: inline-block;
-   align-items: center;
-   justify-content: center;
+.hero-form-inner .container label{
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
-.container .row .col-6 h5{
-    float: left;
+.hero-form-wrapper-menu{
+    position: absolute;
+    margin-top: -35px;
+    padding-left: 20%;
 }
 
-.container .row .col .dropdown1{
-    display: flex;
-    flex-wrap: wrap;
+.hero-form-wrapper-menu .current{
+    background-color: #ec8f6e;
 }
+
+
+
+footer .footer-content h3{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #47225e;
+}
+
+footer .footer-content p{
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    color: #47225e;
+}
+
+.input-text{border: 1px solid #ccc; padding: 7px 14px 9px; transition: 0.4s;}
+.input
 
