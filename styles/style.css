@@ -60,11 +60,10 @@ html{
     justify-content: center;
 }
 
-.main .content h2{
+.main .content h1{
     font-size: 5.2rem;
     font-weight: 600;
     color: #47225e;
-    margin-bottom: 3rem;
 }
 
 .main .content p{
@@ -118,8 +117,6 @@ html{
     background-color: #ec8f6e;
 }
 
-
-
 footer .footer-content h3{
     font-size: 3.2rem;
     font-weight: 600;
@@ -139,5 +136,8 @@ footer .footer-content p{
     font-size: 1.4rem;
 }
 
-
+.btn-menu{
+    background-color: white;
+    font-size: 2rem;
+}
 
